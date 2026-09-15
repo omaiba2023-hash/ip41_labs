@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторні роботи | ІП-41</title>
+    <style>
+        /* Хакерський/Термінальний стиль */
+        body {
+            background-color: #0d1117;
+            color: #00ff66;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            background-image: 
+                linear-gradient(rgba(0, 255, 102, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 102, 0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+            text-shadow: 0 0 4px rgba(0, 255, 102, 0.3);
+        }
+
+        main, header, footer, nav {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 2px solid #00ff66;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 255, 102, 0.2);
+        }
+
+        h1 {
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        h2 {
+            color: #00e5ff;
+            border-left: 4px solid #00ff66;
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+
+        /* Стилі для блоків та меню */
+        nav, article, aside {
+            background: rgba(16, 26, 20, 0.85);
+            border: 1px solid rgba(0, 255, 102, 0.3);
+            border-radius: 6px;
+            padding: 15px 25px;
+            margin-bottom: 20px;
+            box-shadow: inset 0 0 10px rgba(0, 255, 102, 0.05);
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Стилізація посилань */
+        a {
+            color: #00ff66;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            color: #ffffff;
+            background-color: rgba(0, 255, 102, 0.2);
+            padding: 2px 4px;
+            border-radius: 3px;
+            text-shadow: 0 0 8px #00ff66;
+        }
+
+        footer {
+            border-top: 1px solid rgba(0, 255, 102, 0.3);
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            font-size: 0.9em;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>[SYSTEM://IP-41] &gt; Програмування в Internet</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li>
+                <a href="#labs">Лабораторні роботи</a>
+                <ol>
+                    <li><a href="lab1/index.html">Lab1 - Створення веб-сторінки зі статичним текстом</a></li>
+                    <li><a href="lab2/index.html">Lab2 - Створення меню сайту</a></li>
+                    <li><a href="#">Lab3 - Робота зі стилями CSS</a></li>
+                </ol>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <section id="labs">
+                <h2>&gt; Лабораторні роботи</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </section>
+        </article>
+
+        <aside>
+            <h2>&gt; Інші курси</h2>
+            <ul>
+                <li><a href="https://cisco.com" target="_blank">Комп'ютерні мережі</a></li>
+                <li><a href="https://coursera.org" target="_blank">Операційні системи</a></li>
+                <li><a href="https://udemy.com" target="_blank">Основи програмування (C/C++)</a></li>
+                <li><a href="https://oracle.com" target="_blank">Бази даних та SQL</a></li>
+                <li><a href="https://w3schools.com" target="_blank">Веб-технології</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy;Copyright 2026 by Олег Майба. All rights reserved.</p>
+    </footer>
+</body>
+</html>
