@@ -10,13 +10,13 @@ body {
 }
 
 header#events_container {
-    background-color: #23286b;
+    background-color: #23286b; 
     padding: 40px 15px 60px 15px;
     width: 100%;
 }
 
-header#events_container .container {
-    max-width: 1240px;
+.container {
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -41,7 +41,7 @@ header#events_container .container {
 
 .views-col {
     background-color: #ffffff;
-    width: 175px;
+    width: 175px; 
     display: flex;
     flex-direction: column;
     border-radius: 2px;
@@ -68,16 +68,15 @@ header#events_container .container {
     font-size: 13px;
     line-height: 1.35;
     padding: 10px 8px;
-    border-bottom: 1px dashed #cccccc;
+    border-bottom: 1px dashed #cccccc; 
     text-align: center;
-    min-height: 55px;
+    min-height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-
-.views-col h3 {
+.views-field-title h3 {
     color: #0056b3;
     font-size: 13px;
     font-weight: 600;
@@ -86,7 +85,6 @@ header#events_container .container {
     text-align: left;
     margin: 0;
 }
-
-.views-col h3:hover {
+.views-field-title h3:hover {
     text-decoration: underline;
 }
