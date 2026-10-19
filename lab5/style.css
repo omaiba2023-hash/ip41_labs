@@ -1,0 +1,138 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #ffffff;
+}
+ 
+a {
+  color: #0076a8;
+  text-decoration: none;
+}
+ 
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+ 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ 
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+ 
+@media (min-width: 768px) {
+  .container { width: 750px; }
+}
+ 
+@media (min-width: 992px) {
+  .container { width: 970px; }
+}
+ 
+@media (min-width: 1200px) {
+  .container { width: 1170px; }
+}
+ 
+header#events_container {
+  padding: 30px 0 0;
+  font-family: "Roboto Condensed", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #252775;
+}
+ 
+#events_container .view-header h2 {
+  margin: 0 0 30px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
+  color: #333333;
+}
+ 
+#events_container .view-header h2 a {
+  color: #ffffff;
+}
+ 
+#events_container .views-view-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+ 
+#events_container .views-col {
+  position: relative;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin: 0 0 30px;
+  padding: 0 15px;
+}
+ 
+@media (min-width: 768px) {
+  #events_container .views-col {
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+  }
+}
+ 
+@media (min-width: 1200px) {
+  #events_container .views-col {
+    flex-basis: 16.66666667%;
+    max-width: 16.66666667%;
+  }
+}
+ 
+#events_container .views-field,
+#events_container .field-content {
+  display: block;
+  height: 100%;
+}
+ 
+#events_container .field-content > a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: #0076a8;
+  background-color: #f6f6f6;
+}
+ 
+#events_container img {
+  opacity: 0.85;
+}
+ 
+#events_container .field-content > a:hover img {
+  opacity: 1;
+}
+ 
+#events_container .event_date {
+  padding: 15px;
+  text-align: center;
+}
+ 
+#events_container h3 {
+  flex-grow: 1;
+  margin: 0;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #0076a8;
+  background-color: #f6f6f6;
+}
