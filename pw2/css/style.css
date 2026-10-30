@@ -4,25 +4,21 @@ body { font: 400 18px/32px "Poppins", sans-serif; color: #2d2d2d; }
 a { color: inherit; text-decoration: none; }
 img { display: block; }
 
-/* Header */
 .header { display: flex; justify-content: space-between; align-items: center;
   max-width: 1280px; height: 100px; margin: 0 auto; padding: 0 100px; }
 .logo { display: flex; align-items: center; gap: 10px;
   font: 700 20px/20px "Poppins", sans-serif; text-transform: uppercase; }
 .nav { display: flex; align-items: center; gap: 30px; }
 
-/* Кнопки */
 .btn { display: inline-block; padding: 11px 50px; border-radius: 10px; }
 .btn--blue { color: #fff; background: #3366ff; }
 .btn--yellow { padding: 16px 50px; background: #f8d57e; }
 
-/* Hero */
 .hero { display: flex; flex-direction: column; align-items: center; gap: 30px;
   padding: 143px 0; text-align: center; background: #f7f5fd; }
 .hero__title { font-size: 80px; font-weight: 600; line-height: 90px; }
 .hero__text { max-width: 466px; margin-bottom: 4px; color: rgba(45, 45, 45, 0.4); }
 
-/* Video */
 .video { padding: 70px 0; background: #f2faf8; }
 .video__player { display: flex; justify-content: center; align-items: center;
   width: 765px; height: 460px; margin: 0 auto; border-radius: 10px;

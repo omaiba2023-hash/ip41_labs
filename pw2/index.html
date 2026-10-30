@@ -4,53 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Petworld — Pet Store &amp; Beyond</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header class="header">
-    <div class="header__inner container">
-      <a class="logo" href="#" aria-label="Petworld home">
-        <img class="logo__icon" src="assets/logo.svg" alt="" width="35" height="35">
-        <span class="logo__text">Petworld</span>
-      </a>
-
-      <nav class="nav" aria-label="Account">
-        <a class="nav__link" href="#">Sign Up</a>
-        <a class="btn btn--blue" href="#">Log in</a>
-      </nav>
-    </div>
+    <a class="logo" href="#">
+      <img src="assets/logo.svg" alt="" width="35" height="35">
+      Petworld
+    </a>
+    <nav class="nav">
+      <a href="#">Sign Up</a>
+      <a class="btn btn--blue" href="#">Log in</a>
+    </nav>
   </header>
 
   <main>
-
     <section class="hero">
-      <div class="hero__inner container">
-        <h1 class="hero__title">Pet Store &amp; Beyond</h1>
-        <p class="hero__text">
-          Fresh ingredients slowly baked into our super delicious food.
-          Available in a range of delicious flavours, delivered to your door.
-        </p>
-        <a class="btn btn--yellow" href="#">Get Started</a>
-      </div>
+      <h1 class="hero__title">Pet Store &amp; Beyond</h1>
+      <p class="hero__text">
+        Fresh ingredients slowly baked into our super delicious food.
+        Available in a range of delicious flavours, delivered to your door.
+      </p>
+      <a class="btn btn--yellow" href="#">Get Started</a>
     </section>
 
     <section class="video">
-      <div class="video__inner container">
-        <div class="video__player">
-          <img class="video__poster" src="assets/video-poster.jpg" alt="Two dogs in colourful jackets">
-          <button class="video__play" type="button" aria-label="Play video">
-            <img src="assets/play.svg" alt="" width="46" height="51">
-          </button>
-        </div>
+      <div class="video__player">
+        <button class="video__play" type="button">
+          <img src="assets/play.svg" alt="Play video" width="46" height="51">
+        </button>
       </div>
     </section>
-
   </main>
 
 </body>
