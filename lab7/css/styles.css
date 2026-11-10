@@ -1,0 +1,82 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Roboto, Arial, sans-serif; }
+img { display: block; width: 100%; height: auto; }
+a { color: inherit; text-decoration: none; }
+
+.container, .main-container { max-width: 1140px; margin: 0 auto; padding: 0 15px; }
+
+#featured_container { background: #1b2a6b; padding: 20px 0; }
+
+#featured_container .views-view-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#featured_container .row {
+    display: flex;
+    gap: 20px;
+}
+
+#featured_container .views-col {
+    flex: 1;              
+    position: relative;
+    overflow: hidden;
+}
+
+#featured_container .views-col img { transition: transform 0.4s; }
+#featured_container .views-col:hover img { transform: scale(1.05); }
+
+#featured_container .shadow_featured {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, .8), transparent 65%);
+}
+
+#featured_container h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 15px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.news-title { margin: 40px 0 25px; text-align: center; font-weight: 400; }
+.news-title a { color: #0072bc; border-bottom: 1px solid #0072bc; }
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.news-card { background: #f1f1f1; transition: box-shadow 0.3s; }
+.news-card:hover { box-shadow: 0 6px 16px rgba(0, 0, 0, .25); }
+
+.news-card img { aspect-ratio: 16 / 9; object-fit: cover; background: #ccc; }
+
+.news-card time {
+    display: inline-block;
+    margin-top: -26px;
+    position: relative;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    background: rgba(0, 0, 0, .6);
+}
+
+.news-card h3 { margin: 0; padding: 12px; font-size: 15px; color: #0072bc; }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .news-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 767px) {
+    .news-grid { grid-template-columns: 1fr; }
+    #featured_container .row { flex-direction: column; }
+}
